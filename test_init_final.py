@@ -536,7 +536,7 @@ async def dbSave():
 	
 	datelist = list(set(datelist1))
 
-	information1 = '🔥 루나트라or1섭 실루나스 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n'
+	information1 = '🔥 4섭 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n'
 	for timestring in sorted(datelist):
 		for i in range(bossNum):
 			if timestring == bossTime[i]:
@@ -1603,8 +1603,8 @@ class mainCog(commands.Cog):
 
 			await dbSave()
 
-			await ctx.send('< 루나트라or1섭 실루나스 봇 초기화 완료 >', tts=False)
-			print ("< 루나트라or1섭 실루나스 봇 초기화 완료 >")
+			await ctx.send('< 4섭 봇 초기화 완료 >', tts=False)
+			print ("< 4섭 봇 초기화 완료 >")
 		else:
 			return
 
@@ -1628,7 +1628,7 @@ class mainCog(commands.Cog):
 				if voice_client.is_playing():
 					voice_client.stop()
 				await voice_client.disconnect(force=True)
-			print("루나트라or1섭 실루나스 봇 재시작 됩니다.")
+			print("4섭 봇 재시작 됩니다.")
 			await asyncio.sleep(2)
 
 			inidata_restart = repo_restart.get_contents("restart.txt")
@@ -1667,7 +1667,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "😭 루나트라or1섭 실루나스 미예약 보스 😭",
+						title = "😭 4섭 미예약 보스 😭",
 						description= tmp_boss_information[0],
 						color=0x0000ff
 						)
@@ -1682,7 +1682,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-					title = "😭 루나트라or1섭 실루나스 미예약 보스 😭",
+					title = "😭 4섭 미예약 보스 😭",
 					description= tmp_boss_information[0],
 					color=0x0000ff
 					)
@@ -2288,12 +2288,12 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "🔥 루나트라or1섭 실루나스 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
+						title = "🔥 4섭 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
 						description= boss_information[0],
 						color=0x0000ff
 						)
 				embed.add_field(
-						name="😭 루나트라or1섭 실루나스 미예약 보스 😭",
+						name="😭 4섭 미예약 보스 😭",
 						value= tmp_boss_information[0],
 						inline = False
 						)				
@@ -2306,7 +2306,7 @@ class mainCog(commands.Cog):
 					boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "🔥 루나트라or1섭 실루나스 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
+						title = "🔥 4섭 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
 						description= boss_information[0],
 						color=0x0000ff
 						)
@@ -2333,7 +2333,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-					title = "😭 루나트라or1섭 실루나스 미예약 보스 😭",
+					title = "😭 4섭 미예약 보스 😭",
 					description= tmp_boss_information[0],
 					color=0x0000ff
 					)
@@ -2490,7 +2490,7 @@ class mainCog(commands.Cog):
 				boss_information[0] = '``` ```'
 
 			embed = discord.Embed(
-					title = "🔥 루나트라or1섭 실루나스 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
+					title = "🔥 4섭 보스 정보 🔥\n💡 컷하면 컷시간 입력 필수 !\n",
 					description= boss_information[0],
 					color=0x0000ff
 					)
@@ -2518,7 +2518,7 @@ class mainCog(commands.Cog):
 				tmp_boss_information[0] = '``` ```'
 
 			embed = discord.Embed(
-				title = "😭 루나트라or1섭 실루나스 미예약 보스 😭",
+				title = "😭 4섭 미예약 보스 😭",
 				description= tmp_boss_information[0],
 				color=0x0000ff
 				)
